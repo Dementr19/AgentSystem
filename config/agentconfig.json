@@ -1,0 +1,74 @@
+{
+  
+  "data_tcp": [
+    "192.168.10.100:33333",
+    "192.168.10.100:33334",
+    "192.168.10.100:33335"
+  ],
+  "cmd_tcp": {
+    "0": "192.168.10.100:33330",
+    "1": "192.168.10.100:33331",
+    "2": "192.168.10.100:33332"
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "postgresql",
+    "localdb": "Server=(localdb)\\mssqllocaldb;Database=agentsystemdb;Trusted_Connection=True;",
+    "postgresql": "Server=127.0.0.1;Port=5432;Database=agentsystem;User Id={user};Password={password};"
+  },
+  "running_default_agents": {
+    "data_receiver": "1",
+    "parser": "5",
+    "writer": "10",
+    "commander": "1"
+  },
+  "fields": {
+    "count": "10",
+    "fid_00": {
+      "name": "idto",
+      "type": "int"
+    },
+    "fid_01": {
+      "name": "crat",
+      "type": "float"
+    },
+    "fid_02": {
+      "name": "icrh",
+      "type": "float"
+    },
+    "fid_03": {
+      "name": "crdp",
+      "type": "float"
+    },
+    "fid_04": {
+      "name": "crpa",
+      "type": "int"
+    },
+    "fid_05": {
+      "name": "crwd",
+      "type": "int"
+    },
+    "fid_06": {
+      "name": "trwe",
+      "type": "int"
+    },
+    "fid_07": {
+      "name": "crcl",
+      "type": "int"
+    },
+    "fid_08": {
+      "name": "crhc",
+      "type": "int"
+    },
+    "fid_09": {
+      "name": "crhv",
+      "type": "int"
+    }
+  },
+  //путь к html-файлу со страницей для ответа на GET-запрос
+  "get_method_file": "config/get_response.html",
+  //настройки для режима тестирования
+  "test_mode": {
+    //путь к файлу с входными строками, начиная от корневого каталога сервера
+    "input_strings_file": "test/moscow-2010.txt"
+  }
+}

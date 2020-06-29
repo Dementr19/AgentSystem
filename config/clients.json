@@ -1,0 +1,21 @@
+{
+  "server": {
+    "name": "server",
+    "privatekey": "<RSAKeyValue><Modulus>zbKbd762SuWZWjjl81c0FwAY2sqV1B+A47pdD7aKD90HXlJrtHRxMMWcQ9PVKVIQ2Geb8R7mc1o4+OznVmAZbirZZ/TleNhKuJbfLZO4qWuoJx5oMiMSykydmd8i2+RIeAE/YOwyFrMPB0S2sQ29uDFu5uIjQ8l67WVPL9F9mxxx8JqIEDijxMfJfkQR11jnZ4Yf2uAZQ62BkYU1Ap6ZcHICgvh74N3R+kklVys+mmHZUSkqUb7sw0ETWtwe+sNKrLMQQwLbJQUwatcHzxr9ENXHaZlL/2H0VB5tev9wUOK7H+K9lCOcH1qtJuHLlOqR9xtRlP45iZcLUWGot3x8pw==</Modulus><Exponent>AQAB</Exponent><P>7prjuskUdjecnYhZov2QADmTXOnS4KSCo614NXtRk9YGix6HQKQYNMq9VSp+d+CHCQlazsDTnw/2hWC+Rsk7WJoMeZvunCUVsieWl/VJFRRnF18AVi02IT0NF514pw+8SFuiDLV6xj8NE/iEJrtY5+avO9O98g/t1DWIBVnUN68=</P><Q>3LGQfSap+cLnhMZ/6EgZOYu0y4Fx0lP9IXPgUPw27SkLVltW0Q0/Nggu7HadGZo5IYCyA1vNIO8kCmafyXq8rLzN5nz4U6kWYfCXyFeud73JwwmeXJ2ZRLdK6oGzC2wNU7Tmhlc+BlkquPqnXhpWiHZ/4tP9AZGR2o7tU0G8UIk=</Q><DP>kRpSqXHFZssVDFwyHsPSwcBB1LxByOlipQVGWEfhaWU733i2SeJA8kHk+Bj6hg5eMGmm9psfVtkPUzdtH4Ea/RvZwE7KwdxvoEMg+tJpGk+pDfZxLvcZtwb4okbaa8ZO+zX2i4IF4u/PFTkJrMA8JfMM1/ZByiZTvLy9NnvVafM=</DP><DQ>Tw0fd2TJD9jbuzirClYBCxba3OZyEefZzQjHudqOBidkkztGfr1i/gSyYisenNQcUL7bhM52TKy8WSlnZPEc8jby/fOXs8fmZ5CZnb6ilOubgMxKOFyPUQjiwdtRee7rWyd6R3aqlfWMkxPdrZx7kIf5yRMsFkrBVutJYUAzpxk=</DQ><InverseQ>iWZPbWgvlN/qB7dzKiBfSi5ugWPtby0KS0t2+UBl9z8+7qYKQvmuwhtsbnT+NLmilTCv/Y/mK4omBgO4kURZxnN4DPu7dP4ffzb71gka6DiDa+S6KKA22631VDBq2RT6pk2zjcEoFyK01uvRRZSLHY52CQnnoUOPqjvMlBp52Qw=</InverseQ><D>H6jY4vJYjmiOVOOjCPQoEU4zhSFfNDnxFZvujOeUkmJ7qtnWt/ygG1ie95WYHncCHry7tL4DzEdbs3yLErFR2LIBqk14MERiI80c5p/w8Sqfw/2bHfRmBPsL2s4MSHn3aXkPrzRLdVD0BDNgRxoNVFdPcXvm350YLYfFS1/cDE5qzaMT/Buy8vO8vMCRm8TFXc5Z0jTB5tpQQZeu+btZ4cFg9Ey7gTsXj2htp+z7wX2aMA09ylctnrcq0z24uAvLTS4/1wtbCo/6GwLYXWBk+09ZJyhrAjt4bGdWyNhrRGxMaol/OD6JWIxWo77vXqmUP2OqZvhOvy0xUoNgxRtpEQ==</D></RSAKeyValue>",
+    "publickey": "<RSAKeyValue><Modulus>zbKbd762SuWZWjjl81c0FwAY2sqV1B+A47pdD7aKD90HXlJrtHRxMMWcQ9PVKVIQ2Geb8R7mc1o4+OznVmAZbirZZ/TleNhKuJbfLZO4qWuoJx5oMiMSykydmd8i2+RIeAE/YOwyFrMPB0S2sQ29uDFu5uIjQ8l67WVPL9F9mxxx8JqIEDijxMfJfkQR11jnZ4Yf2uAZQ62BkYU1Ap6ZcHICgvh74N3R+kklVys+mmHZUSkqUb7sw0ETWtwe+sNKrLMQQwLbJQUwatcHzxr9ENXHaZlL/2H0VB5tev9wUOK7H+K9lCOcH1qtJuHLlOqR9xtRlP45iZcLUWGot3x8pw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>",
+    "privilege": "server",
+    "dbpassword": "server"
+  },
+  "clients": {
+    "admin": {
+      "publickey": "<RSAKeyValue><Modulus>kX57WW4+uufh+bLD0D/nptB/XeKeu9PtSEk3/CF9vUOaZM+soICSOTr+YV0DUuJbqaCDkB2nAUwPSl+Cpq0p1dTM5+0pLDPUy3xJIeNUm/grTkhu3awEOAYCMlidTuk3AACI5WjT8sF/H3Rbnnqkwh7AX+vbfPsSjOr+ZVVAoIBLmNFaoeCTrpCD72lwqw0L9MidfwjWqdiMlo8utx13GHv6tCn6nwVDiVE9It5ekXAmMaOvvgDf9TH2y9kl0INOKDmsDl/BeU4lFjQ6OppAjQn2/tA8uo9eL0dIi8d4a+pjbF0YWlTSvPzAeIhL3FjLjko0V6bV8a2GEBsMpBbZYQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>",
+      "privilege": "admin",
+      "dbpassword": "admin"
+    },
+    "anton": {
+      "publickey": "<RSAKeyValue><Modulus>plz17HEktznavJyfpjscqpzdg9iwT1K0ol1aMerz9AG+zMYRuI9eoIiiZfkbOS6WCc9SaAD2ehAzGhH5e+NzrjSqU2YLRA4v6Cn0hhOMEcsQDHUV2CsjzLgxFX2wptdaTXDM39zLj+OY0PwNmzJxHgHzx+fMaFPPnj+R6CU5tIhYGp1gvr4JE6U2aqnSaB6uykVDJSym4ONByUEoHYrFORzPKepk7C6cPMhFgLIlEOr+/EeAaHphBKJYvaZYW/LntQlIRV4WhZ1HXJ125LROlEnAAmb65qu6mGCFfJXsrHm7bosbnNCbYQrBssgXD+8FhP3aYSM/7C7Odhm5gND5aw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>",
+      "privilege": "user",
+      "dbpassword": "anton"
+    }
+  }
+}

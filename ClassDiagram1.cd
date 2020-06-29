@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AgentSystem.Classes.Agency" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAEAAAAAgsAAAAEEAEAAIQAAAgAQAAAAAICAAAAAwE=</HashCode>
+      <FileName>Classes\Agency.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Agent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AgentSystem.Classes.Agent" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEASgAAAaEAAQAAEAAAAARAAAAAAAIAAAAABQAAAAA=</HashCode>
+      <FileName>Classes\Agent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AgentRoles" />
+      <Property Name="AgentMessage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AgentSystem.Classes.AgentManager">
+    <Position X="7.75" Y="0.5" Width="2" />
+    <AssociationLine Name="Context" Type="AgentSystem.Classes.Context">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="0.865" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AICCAAGAAgAAAIAwIAAiIAAGAgAgAAMAYAEAAAAEAAA=</HashCode>
+      <FileName>Classes\AgentManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Context" />
+      <Property Name="Agency" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AgentSystem.Classes.AgentMessage">
+    <Position X="13.5" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Classes\AgentMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.Classes.AgentRoles">
+    <Position X="16" Y="0.5" Width="1.75" />
+    <AssociationLine Name="AppDbContext" Type="AgentSystem.DBClasses.AppDbContext">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.374" Y="-0.239" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QCQAAgAAAAAAIIAgESEAACQAAgAAEAAAAAAgEAACAEI=</HashCode>
+      <FileName>Classes\AgentRoles.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AppDbContext" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AgentSystem.Classes.FilterItem">
+    <Position X="18.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\CmdInterpretator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.Classes.DBType">
+    <Position X="20" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Classes\CmdInterpretator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.Classes.Commands">
+    <Position X="18.75" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="AgentSystem.Classes.Commands.Function">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\Commands.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <AssociationLine Name="FilterItem" Type="AgentSystem.Classes.FilterItem" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.812" Y="4.304" />
+        <Point X="19.812" Y="4.679" />
+        <Point X="19" Y="4.679" />
+        <Point X="19" Y="5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="DBType" Type="AgentSystem.Classes.DBType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.812" Y="4.304" />
+        <Point X="19.812" Y="4.679" />
+        <Point X="20.75" Y="4.679" />
+        <Point X="20.75" Y="5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAACAAAAAAFAAAAAAAgAIAAAAAAAAAQAI=</HashCode>
+      <FileName>Classes\Commands.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FilterItem" />
+      <Property Name="DBType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AgentSystem.Classes.TcpAddress">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAACAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.Classes.Context">
+    <Position X="2.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgQgAOQAAAAAOAAAAAAAgAAAQACAAEAAABBAAAAwAA=</HashCode>
+      <FileName>Classes\Context.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DataBuffer" />
+      <Property Name="TcpAddress" />
+      <Property Name="DateString" />
+      <Property Name="StationData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AgentSystem.Classes.DateString">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQA=</HashCode>
+      <FileName>Classes\DateString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.Classes.SystemTools">
+    <Position X="22.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAARAAAAABAAAEAAEAAAJAgAAABAAAAAAAEAAAA=</HashCode>
+      <FileName>Classes\SystemTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.DBClasses.AppDbContext">
+    <Position X="16" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DBClasses\AppDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.DBClasses.StationData">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAChAAAoAAAAACAEAAAAABAIiAAIAAEEACBEAAAAQA=</HashCode>
+      <FileName>DBClasses\StationData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.ReportCommandClasses.Report" Collapsed="true">
+    <Position X="9.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ReportCommandClasses\Report.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.ReportCommandClasses.ReportCommandError" Collapsed="true">
+    <Position X="8.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReportCommandClasses\ReportCommandError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.ReportCommandClasses.ReportDBRequest" Collapsed="true">
+    <Position X="12.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReportCommandClasses\ReportDBRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.ReportCommandClasses.ReportOneRoleStatistic" Collapsed="true">
+    <Position X="4" Y="10.75" Width="1.5" />
+    <InheritanceLine Type="AgentSystem.ReportCommandClasses.Report" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="10.062" />
+        <Point X="10" Y="10.375" />
+        <Point X="4.625" Y="10.375" />
+        <Point X="4.625" Y="10.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEQAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReportCommandClasses\ReportRoleStatistic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.ReportCommandClasses.ReportRoleStatistic" Collapsed="true">
+    <Position X="10.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReportCommandClasses\ReportRoleStatistic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.ReportCommandClasses.ReportTcpServer" Collapsed="true">
+    <Position X="15" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQACAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ReportCommandClasses\ReportTcpServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.ReportCommandClasses.ReportServerInfo" Collapsed="true">
+    <Position X="6" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>ReportCommandClasses\ReportTcpServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentSystem.Classes.DataBuffer">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACBAAAAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\DataBuffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="AgentSystem.Classes.AgentMode" Collapsed="true">
+    <Position X="13.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Agent.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AgentSystem.Classes.AgentState" Collapsed="true">
+    <Position X="13.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAIABAAAAA=</HashCode>
+      <FileName>Classes\Agent.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AgentSystem.Classes.AgentCommand" Collapsed="true">
+    <Position X="13.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgCAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Agent.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AgentSystem.Classes.Roles" Collapsed="true">
+    <Position X="16" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAkAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\AgentRoles.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AgentSystem.Classes.Startmode" Collapsed="true">
+    <Position X="16" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Classes\AgentRoles.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
